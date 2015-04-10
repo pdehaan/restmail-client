@@ -14,7 +14,7 @@ var restmail = require('restmail-client');
 restmail('peter', {maxRetry: 2}).then(console.log).catch(console.error);
 ```
 
-The above snippet will poll the peter@restmail.net inbox for messages.
+The above snippet will poll the peter\@restmail.net inbox for messages.
 
 ## API:
 
@@ -23,7 +23,10 @@ The above snippet will poll the peter@restmail.net inbox for messages.
 #### Parameters:
 
 - `user` &mdash; String; The user/inbox to check for messages.
-- `options` &mdash; Object; See [qretry](https://www.npmjs.com/package/qretry) usage for more information.
+- `options` &mdash; Object; A [qretry](https://www.npmjs.com/package/qretry) `options` object with the following optional parameters:
+    - `maxRetry` **(Number)** *optional*: set the maximum retry (default is 5)
+    - `interval` **(Number)** *optional*: set the initial interval in milliseconds between the first and the second call. (default is 500)
+    - `intervalMultiplicator` **(Number >= 1)** *optional*: set the multiplicator which increase the interval through tries. (default is 1.5)
 
 #### Response:
 
