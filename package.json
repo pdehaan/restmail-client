@@ -10,7 +10,9 @@
     "qretry": "0.3.0",
     "request-promise": "0.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "0.18.0"
+  },
   "homepage": "https://github.com/pdehaan/restmail-client",
   "keywords": [
     "restmail",
@@ -23,6 +25,7 @@
     "url": "https://github.com/pdehaan/restmail-client.git"
   },
   "scripts": {
+    "outdated": "npm outdated --depth 0",
     "test": "eslint ."
   }
 }
