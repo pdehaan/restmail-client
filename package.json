@@ -1,0 +1,28 @@
+{
+  "name": "restmail-client",
+  "description": "Client for restmail.net which polls for messages.",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (http://nodeexamples.com/)",
+  "bugs": {
+    "url": "https://github.com/pdehaan/restmail-client/issues"
+  },
+  "dependencies": {
+    "qretry": "0.3.0",
+    "request-promise": "0.4.1"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/pdehaan/restmail-client",
+  "keywords": [
+    "restmail",
+    "promise"
+  ],
+  "license": "WTFPL",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pdehaan/restmail-client.git"
+  },
+  "scripts": {
+    "test": "eslint ."
+  }
+}
