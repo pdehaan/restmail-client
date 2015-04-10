@@ -4,7 +4,7 @@ Client for [restmail.net](http://restmail.net/) which polls for messages. Return
 
 ## Installation:
 ```sh
-% npm i pdehaan/restmail-client -S
+% npm i restmail-client -S
 ```
 
 ## Usage:
